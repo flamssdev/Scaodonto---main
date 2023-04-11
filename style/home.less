@@ -1,0 +1,53 @@
+body {
+  main {
+    width: 100%;
+    .home {
+      background-color: var(--bege);
+      padding-top: 105px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      position: relative;
+      z-index: -1;
+
+      .container {
+        height: 100%;
+        video {
+          position: relative;
+          width: 100%;
+          z-index: -1;
+        }
+
+        .mobile {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  body {
+    main {
+      .home {
+        padding-top: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  body {
+    main {
+      .home {
+        padding-top: 50px;
+      }
+    }
+  }
+}

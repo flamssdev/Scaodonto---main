@@ -1,0 +1,83 @@
+body {
+  main {
+    .servicos {
+      max-width: 1280px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 120px 2% 0;
+
+      .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 20px;
+
+        h3 {
+          font-size: 40px;
+          color: var(--bege);
+          font-weight: 700;
+          text-align: center;
+        }
+
+        .content-servicos {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          overflow: auto;
+          width: 100%;
+          gap: 40px;
+          padding-bottom: 20px;
+
+          .box {
+            width: 360px;
+            background-color: var(--bege);
+            padding: 10px;
+            margin: 0 auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            gap: 25px;
+            border-radius: 25px;
+
+            img {
+              width: 340px;
+              border-radius: 24px;
+              -webkit-box-shadow: var(--box-shadow);
+                      box-shadow: var(--box-shadow);
+            }
+
+            h5 {
+              font-size: 28px;
+              color: var(--branco);
+            }
+
+            .list {
+              width: 260px;
+              ul {
+                li {
+                  font-size: 20px;
+                  color: var(--branco);
+                  margin-bottom: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

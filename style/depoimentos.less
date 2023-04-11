@@ -1,0 +1,66 @@
+body {
+  main {
+    .depoimentos {
+      max-width: 1280px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 120px 2% 0;
+
+      .container {
+        text-align: center;
+        h3 {
+          font-size: 40px;
+          color: var(--bege);
+          font-weight: 700;
+          text-align: center;
+        }
+
+        span {
+          margin: 20px 0;
+          display: block;
+          font-size: 20px;
+        }
+
+        .content-depoimentos {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+
+          gap: 30px;
+          width: 100%;
+          overflow: auto;
+          padding-bottom: 20px;
+
+          .box {
+            background-color: var(--bege);
+            border-radius: 25px;
+            width: 350px;
+
+            img {
+              width: 350px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1173px) {
+  body {
+    main {
+      .depoimentos {
+        .container {
+          .content-depoimentos {
+            -webkit-box-pack: unset;
+                -ms-flex-pack: unset;
+                    justify-content: unset;
+          }
+        }
+      }
+    }
+  }
+}

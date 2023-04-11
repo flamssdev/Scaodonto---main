@@ -1,0 +1,90 @@
+body {
+  main {
+    .thalita {
+      padding: 100px 2% 0;
+      .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 80px;
+        .imagem {
+          width: 500px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .descricao {
+          max-width: 400px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          gap: 20px;
+
+          h3 {
+            font-size: 40px;
+            color: var(--bege);
+            font-weight: 700;
+            text-align: center;
+          }
+          p {
+            font-size: 20px;
+            text-align: justify;
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      .efeito {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    main {
+      .thalita {
+        padding: 70px 2% 0;
+        .container {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: reverse;
+              -ms-flex-direction: column-reverse;
+                  flex-direction: column-reverse;
+
+          .descricao {
+            max-width: 600px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  body {
+    main {
+      .thalita {
+        .container {
+          .imagem {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
