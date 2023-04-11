@@ -1,6 +1,8 @@
 window.addEventListener("load", () => {
     const videoDesktop = document.getElementById("video-desktop");
     videoDesktop.play();
+    const videoMobile = document.getElementById("video-mobile");
+    videoMobile.play();
   
 }) 
 
