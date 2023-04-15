@@ -35,17 +35,6 @@ menuLista.forEach((el) => {
 
 const container = document.getElementById("container-servicos");
 
-container.addEventListener("mouseenter", () => {
-  container.addEventListener("wheel", (e) => {
-    e.preventDefault();
-    container.scrollLeft += e.deltaY;
-  });
-});
-
-container.addEventListener("mouseleave", () => {
-  container.removeEventListener("wheel");
-});
-
 let isDown = false;
 let startX;
 let scrollLeft;
@@ -72,23 +61,7 @@ container.addEventListener("mousemove", (e) => {
   container.scrollLeft = scrollLeft - walk;
 });
 
-container.addEventListener("wheel", (e) => {
-  e.preventDefault();
-  container.scrollLeft += e.deltaY;
-});
-
 const containerDepoimentos = document.getElementById("container-depoimentos");
-
-containerDepoimentos.addEventListener("mouseenter", () => {
-  containerDepoimentos.addEventListener("wheel", (e) => {
-    e.preventDefault();
-    containerDepoimentos.scrollLeft += e.deltaY;
-  });
-});
-
-containerDepoimentos.addEventListener("mouseleave", () => {
-  containerDepoimentos.removeEventListener("wheel");
-});
 
 let isDownDepoimentos = false;
 let startXDepoimentos;
@@ -114,11 +87,6 @@ containerDepoimentos.addEventListener("mousemove", (e) => {
   const x = e.pageX - containerDepoimentos.offsetLeft;
   const walk = x - startXDepoimentos;
   containerDepoimentos.scrollLeftDepoimentos = scrollLeftDepoimentos - walk;
-});
-
-containerDepoimentos.addEventListener("wheel", (e) => {
-  e.preventDefault();
-  containerDepoimentos.scrollLeftDepoimentos += e.deltaY;
 });
 
 
