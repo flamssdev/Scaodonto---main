@@ -1,3 +1,8 @@
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('conteudo').style.display = 'block';
+});
+
+
 window.addEventListener("load", () => {
     const videoDesktop = document.getElementById("video-desktop");
     videoDesktop.play();
